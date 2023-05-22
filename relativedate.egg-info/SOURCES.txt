@@ -1,3 +1,4 @@
+README.md
 setup.py
 relativedate/__init__.py
 relativedate.egg-info/PKG-INFO
