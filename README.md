@@ -7,17 +7,19 @@
 <p>
     O objetivo desta biblioteca é facilitar a manipulação de datas relativas e calculos com datas, em sua primeira versão estamos trabalhando apenas com a data relativa baseado em mês, onde pode se passar o argumento de meses (positivo e negativo) e retornará a data relativa ao mês desejado
 </p>
+
+<hr>
+<u><b>Links</b></u> <br>
+<b>GitHub:</b> <a href="https://github.com/jmiante/relativedate/">https://github.com/jmiante/relativedate</a> <br>
+<b>PyPI:</b> <a href="https://pypi.org/project/relativedate/">https://pypi.org/project/relativedate</a>
+
 <hr>
 <b>Instalação:</b>
-
-<p>
-    pip install relativedate
-</p>
+<p>pip install relativedate</p>
 <hr>
 
-
+<hr>
 <b>Exemplo Utilização:</b>
-<div style="border: 2px solid gray; border-radius: 20px; padding: 20px;">
 <p>
     from datetime import datetime <br>
     from relativedate import RelativeDate <br>
@@ -27,7 +29,7 @@
     <br>
     print(rd.get_relative_month(-9))<br><br>
 </p>
-</div> <br>
+<hr>
 <p style="background: lightgray; color: black; padding: 20px;">
     <b>RETURN:</b><br>
     >> 2022-08-07 00:00:00
