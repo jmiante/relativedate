@@ -21,20 +21,23 @@
 
 <hr>
 <b>Exemplo Utilização:</b>
-<p>
-    from datetime import datetime <br>
-    from relativedate import RelativeDate <br>
-    <br>
-    dt = datetime(year=2023, month=5, day=7)<br>
-    rd = RelativeDate(dt)<br>
-    <br>
-    print(rd.get_relative_month(-9))<br><br>
-</p>
-<hr>
-<p style="background: lightgray; color: black; padding: 20px;">
-    <b>RETURN:</b><br>
-    >> 2022-08-07 00:00:00
-</p>
+    <p>
+        from datetime import datetime <br>
+        from relativedate import RelativeDate <br>
+        <br>
+        dt = datetime(year=2023, month=5, day=7)<br>
+        rd = RelativeDate(dt)<br>
+        print(rd)<br><br>
+        rd.addMonth(-9)<br>
+        <br>
+        print(rd)<br><br>
+    </p>
+    <hr>
+    <p style="background: lightgray; color: black; padding: 20px;">
+        <b>RETURN:</b><br>
+        >> 2023-05-07 00:00:00 <br>
+        >> 2022-08-07 00:00:00
+    </p>
 
 
 <hr>
