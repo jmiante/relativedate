@@ -20,3 +20,18 @@ menu.innerHTML = `
         </div>
       </header>
 `
+
+
+function verificarScroll() {
+  var voltar_topo = document.querySelector('.voltar-topo');
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+  if (scrollTop > 10) {
+    voltar_topo.classList.add('mostrar'); // Adicionar a classe "mostrar" para exibir o elemento
+  } else {
+    voltar_topo.classList.remove('mostrar'); // Remover a classe "mostrar" para ocultar o elemento
+  }
+}
+
+// Evento de scroll
+window.addEventListener('scroll', verificarScroll);

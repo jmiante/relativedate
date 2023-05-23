@@ -23,6 +23,8 @@
                 <li><a href="#addday" class="text-dark">Função addDay()</a></li>
                 <li><a href="#add" class="text-dark">Função add()</a></li>
                 <li><a href="#datediff" class="text-dark">Função dateDiff()</a></li>
+                <li><a href="#lastday" class="text-dark">Função lastDay()</a></li>
+                <li><a href="#lastdate" class="text-dark">Função lastDate()</a></li>
             </ul>
         </section>       
         
@@ -82,7 +84,7 @@
                 <div class="col-12" id="addyear">
                     <h5>Função addYear(relative_year)</h5>
                     <p>
-                        A função addYear irá alterar o ano do atribuito datetime do objeto RelativeDate de acordo com o parametro <i>relative_year</i>, segue abaixo um exemplo de uso:
+                        A função addYear irá alterar o ano do atributo datetime do objeto RelativeDate de acordo com o parametro <i>relative_year</i>, segue abaixo um exemplo de uso:
                     </p>
                     <div class="border p-2 bg-dark text-white">
                         from datetime import datetime <br>
@@ -107,7 +109,7 @@
                 <div class="col-12" id="addmonth">
                     <h5>Função addMonth(relative_month)</h5>
                     <p>
-                        A função addMonth irá alterar o mês do atribuito datetime do objeto RelativeDate de acordo com o parametro <i>relative_month</i>, segue abaixo um exemplo de uso:
+                        A função addMonth irá alterar o mês do atributo datetime do objeto RelativeDate de acordo com o parametro <i>relative_month</i>, segue abaixo um exemplo de uso:
                     </p>
                     <div class="border p-2 bg-dark text-white">
                         from datetime import datetime <br>
@@ -132,7 +134,7 @@
                 <div class="col-12" id="addday">
                     <h5>Função addDay(relative_day)</h5>
                     <p>
-                        A função addDay irá alterar o dia do atribuito datetime do objeto RelativeDate de acordo com o parametro <i>relative_day</i>, segue abaixo um exemplo de uso:
+                        A função addDay irá alterar o dia do atributo datetime do objeto RelativeDate de acordo com o parametro <i>relative_day</i>, segue abaixo um exemplo de uso:
                     </p>
                     <div class="border p-2 bg-dark text-white">
                         from datetime import datetime <br>
@@ -200,6 +202,49 @@
                     </div>
                     <hr>
                 </div>
+
+                <div class="col-12" id="lastday">
+                    <h5>Função lastDay()</h5>
+                    <p>
+                        A função lastDay irá retornar o último dia do mês, segue abaixo um exemplo de uso:
+                    </p>
+                    <div class="border p-2 bg-dark text-white">
+                        from datetime import datetime <br>
+                        from relativedate import RelativeDate <br><br>
+                        dt = datetime(year=2022, month=9, day=2)<br>
+                        rd = RelativeDate(dt)<br>
+                        print(rd.datetime)<br>
+                        print(rd.lastDay())<br>
+                    </div>
+                    <div class="border p-2 bg-secondary text-white mt-2">
+                        RETORNO: <br>
+                        2022-09-02 00:00:00<br>
+                        30<br>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="col-12" id="lastdate">
+                    <h5>Função lastDate()</h5>
+                    <p>
+                        A função lastDate irá retornar um objeto datetime com o dia alterado para o último dia do mês do atributo do datetime do objeto RelativeDate, segue abaixo um exemplo de uso:
+                    </p>
+                    <div class="border p-2 bg-dark text-white">
+                        from datetime import datetime <br>
+                        from relativedate import RelativeDate <br><br>
+                        dt = datetime(year=2022, month=9, day=2)<br>
+                        rd = RelativeDate(dt)<br>
+                        print(rd.datetime)<br>
+                        print(rd.lastDate())<br>
+                    </div>
+                    <div class="border p-2 bg-secondary text-white mt-2">
+                        RETORNO: <br>
+                        2022-09-02 00:00:00<br>
+                        2022-09-30 00:00:00<br>
+                    </div>
+                    *** A Função lastDate() não altera o valor do atribuito datetime do objeto RelativeDate
+                    <hr>
+                </div> 
                 
 
 

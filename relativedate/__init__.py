@@ -1,5 +1,5 @@
 from datetime import datetime as dt
-from relativedate import dtmath
+from relativedate import dtmath, dtget
 
 
 class RelativeDate:
@@ -19,6 +19,7 @@ class RelativeDate:
     def __str__(self):
         return self.datetime.strftime('%Y-%m-%d')
 
+    ### DATE MATH ###
     def addDay(self, relative_day):
         self.datetime = dtmath.addDay(self.datetime, relative_day)
 
@@ -33,3 +34,11 @@ class RelativeDate:
 
     def dateDiff(self, datetime):
         return dtmath.dateDiff(self.datetime, datetime)
+    
+    ### DATE GET ###
+    def lastDay(self):
+        return dtget.lastDay(self.datetime)
+    
+    def lastDate(self):
+        return dtget.lastDate(self.datetime)
+
