@@ -1,0 +1,15 @@
+.voltar-topo, .voltar-topo:hover {
+    width: 80px;
+    height: 80px;
+    background-color: grey;
+    color: white;
+    border-radius: 30%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px; /* Espaçamento opcional do canto direito */
+    margin-bottom: 20px; /* Espaçamento opcional da parte inferior */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

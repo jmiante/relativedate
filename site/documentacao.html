@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Package - RelativeDate - Documentação</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="menu-top"></div>
+    
+    <!-- Conteúdo Página -->
+    <div class="container mt-4">
+        <section id="menu">
+            <h3>Documentação</h3>
+            <ul class="mt-3">
+                <li><a href="#instalacao" class="text-dark">Instalação</a></li>
+                <li><a href="#criando_objeto_rd" class="text-dark">Criando um objeto RelativeDate</a></li>  
+                <li><a href="#addyear" class="text-dark">Função addYear()</a></li>  
+                <li><a href="#addmonth" class="text-dark">Função addMonth()</a></li>
+                <li><a href="#addday" class="text-dark">Função addDay()</a></li>
+            </ul>
+        </section>       
+        
+
+        <section id="documentacao" class="mt-3">
+            <div class="row">
+
+                <div class="col-12" id="instalacao">
+                    <hr>
+                    <h5>Instalação</h5>
+                    <p>
+                        Para Instalar a biblioteca RelativeDate, basta abrir o terminal e instalar via pip, digitando o seguinte comando:
+                    </p>
+                    <div class="border p-2 bg-dark text-white">
+                        pip install relativedate
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="col-12" id="criando_objeto_rd">
+                    <h5>Criando um objeto RelativeDate</h5>
+                    <p>
+                        Um objeto RelativeDate pode ser instanciado de duas formas, sendo:
+                    </p>
+                    <p>
+                        1. Instanciando sem argumento, isso irá gerar um objeto RelativeDate com o atributo datetime com a data e hora do momento que instanciar o Objeto
+                        para isso, basta digitar o código abaixo:
+                    </p>
+                    <div class="border p-2 bg-dark text-white">
+                        from relativedate import RelativeDate <br><br>
+                        rd = RelativeDate() <br>
+                        print(rd.datetime)<br><br>
+                    </div>
+                    <div class="border p-2 bg-secondary text-white mt-2">
+                        RETORNO: <br>
+                        2023-05-07 21:00:00
+                    </div>
+                    <p>*** Supondo que foi o objeto foi instanciado no dia 23/05/2023 às 21:00hs</p>
+                    <p class="mt-2">
+                        2. Instanciando a partir de um datetime, o objeto RelativeDate pode receber como argumento um datetime, com isso será gerado o objeto RelativeDate 
+                        com o atributo datetime com os dados do objeto datetime passado no argumento, vamos para o exemplo abaixo:
+                    </p>
+                    <div class="border p-2 bg-dark text-white">
+                        from datetime import datetime <br>
+                        from relativedate import RelativeDate <br><br>
+                        dt = datetime(year=2023, month=5, day=5) <br>
+                        rd = RelativeDate(dt) <br>
+                        print(rd.datetime)<br><br>
+                    </div>
+                    <div class="border p-2 bg-secondary text-white mt-2">
+                        RETORNO: <br>
+                        2023-05-05 00:00:00
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="col-12" id="addyear">
+                    <h5>Função addYear(relative_year)</h5>
+                    <p>
+                        A função addYear irá alterar o ano do atribuito datetime do objeto RelativeDate de acordo com o parametro <i>relative_year</i>, segue abaixo um exemplo de uso:
+                    </p>
+                    <div class="border p-2 bg-dark text-white">
+                        from datetime import datetime <br>
+                        from relativedate import RelativeDate <br><br>
+                        dt = datetime(year=2023, month=5, day=5) <br>
+                        rd = RelativeDate(dt) <br>
+                        print(rd.datetime)<br><br>
+                        rd.addYear(-1) <br>
+                        print(rd.datetime)<br><br>
+                        rd.addYear(3) <br>
+                        print(rd.datetime)<br><br>
+                    </div>
+                    <div class="border p-2 bg-secondary text-white mt-2">
+                        RETORNO: <br>
+                        2023-05-05 00:00:00<br>
+                        2022-05-05 00:00:00<br>
+                        2025-05-05 00:00:00<br>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="col-12" id="addmonth">
+                    <h5>Função addMonth(relative_month)</h5>
+                    <p>
+                        A função addMonth irá alterar o mês do atribuito datetime do objeto RelativeDate de acordo com o parametro <i>relative_month</i>, segue abaixo um exemplo de uso:
+                    </p>
+                    <div class="border p-2 bg-dark text-white">
+                        from datetime import datetime <br>
+                        from relativedate import RelativeDate <br><br>
+                        dt = datetime(year=2023, month=5, day=5) <br>
+                        rd = RelativeDate(dt) <br>
+                        print(rd.datetime)<br><br>
+                        rd.addMonth(-7) <br>
+                        print(rd.datetime)<br><br>
+                        rd.addMonth(10) <br>
+                        print(rd.datetime)<br><br>
+                    </div>
+                    <div class="border p-2 bg-secondary text-white mt-2">
+                        RETORNO: <br>
+                        2023-05-05 00:00:00<br>
+                        2022-10-05 00:00:00<br>
+                        2023-08-05 00:00:00<br>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="col-12" id="addday">
+                    <h5>Função addDay(relative_day)</h5>
+                    <p>
+                        A função addDay irá alterar o dia do atribuito datetime do objeto RelativeDate de acordo com o parametro <i>relative_day</i>, segue abaixo um exemplo de uso:
+                    </p>
+                    <div class="border p-2 bg-dark text-white">
+                        from datetime import datetime <br>
+                        from relativedate import RelativeDate <br><br>
+                        dt = datetime(year=2023, month=5, day=5) <br>
+                        rd = RelativeDate(dt) <br>
+                        print(rd.datetime)<br><br>
+                        rd.addDay(-27) <br>
+                        print(rd.datetime)<br><br>
+                        rd.addDay(40) <br>
+                        print(rd.datetime)<br><br>
+                    </div>
+                    <div class="border p-2 bg-secondary text-white mt-2">
+                        RETORNO: <br>
+                        2023-05-05 00:00:00<br>
+                        2023-04-10 00:00:00<br>
+                        2023-05-20 00:00:00<br>
+                    </div>
+                    <hr>
+                </div>
+                
+
+
+            </div>
+            <a class="voltar-topo" href="#menu-top">Inicio</a>
+        </section>
+        
+    </div>
+    <script src="js/menu_top_site.js"></script>
+</body>
+</html>

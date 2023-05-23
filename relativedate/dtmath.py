@@ -1,3 +1,5 @@
+from datetime import timedelta
+
 def addYear(datetime, relative_year):
     try:
         year = datetime.year + int(relative_year)
@@ -25,4 +27,7 @@ def addMonth(datetime, relative_month):
             month -= 12
             year += 1
         return datetime.replace(year=year, month=month)
+
+def addDay(datetime, relative_day):
+     return datetime + timedelta(days=relative_day)
 

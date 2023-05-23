@@ -19,6 +19,9 @@ class RelativeDate:
     def __str__(self):
         return self.datetime.strftime('%Y-%m-%d')
 
+    def addDay(self, relative_day):
+        self.datetime = dtmath.addDay(self.datetime, relative_day)
+
     def addMonth(self, relative_month):
         self.datetime = dtmath.addMonth(self.datetime, relative_month)
 

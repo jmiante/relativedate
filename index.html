@@ -6,77 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python Package - RelativeDate</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <style>
-        .h100 {
-            height: 99%;
-        }
-    </style>
 </head>
 <body>
-
-    <div class="row col-12 bg-secondary justify-content-left">
-        <div class="col-3 d-flex">
-            <img src="site/img/logo.png" alt="" class="img img-fluid" style="max-height: 100px;">
-            <div class="text-center text-white mt-4">
-                <h2>RelativeDate</h2>
-            </div>
-        </div>
-        
-    </div>
-    <div class="container mt-4">
-        <h1>Python Package: relativedate</h1>
+    <div id="menu-top"></div>
     
-        <b>Descrição:</b>
-        <p>
-            Biblioteca Python relacionada a datas, onde é criado um objeto "RelativeDate" que possui o atributo datetime, onde é retornado um objeto datetime.
-        </p>
-        <p>
-            O objetivo desta biblioteca é facilitar a manipulação de datas relativas e calculos com datas, em sua primeira versão estamos trabalhando apenas com a data relativa baseado em mês, onde pode se passar o argumento de meses (positivo e negativo) e retornará a data relativa ao mês desejado
-        </p>
+    <!-- Conteúdo Página -->
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <div class="container mt-4">
+            <h1>Python Package: relativedate</h1>
         
-        <hr>
-        <u><b>Links</b></u> <br>
-        <b>GitHub:</b> <a href="https://github.com/jmiante/relativedate/" target="_blank">https://github.com/jmiante/relativedate</a> <br>
-        <b>PyPI:</b> <a href="https://pypi.org/project/relativedate/" target="_blank">https://pypi.org/project/relativedate</a> <br>
-        <b>Site:</b> <a href="https://jmiante.github.io/relativedate/">https://jmiante.github.io/relativedate</a> <br>
-        
-        <hr>
-        <b>Instalação:</b>
-        <p>pip install relativedate</p>
-        <hr>
-        
-        <hr>
-        <b>Exemplo Utilização:</b>
-        <p>
-            from datetime import datetime <br>
-            from relativedate import RelativeDate <br>
-            <br>
-            dt = datetime(year=2023, month=5, day=7)<br>
-            rd = RelativeDate(dt)<br>
-            print(rd)<br><br>
-            rd.addMonth(-9)<br>
-            <br>
-            print(rd)<br><br>
-        </p>
-        <hr>
-        <p style="background: lightgray; color: black; padding: 20px;">
-            <b>RETURN:</b><br>
-            >> 2023-05-07 00:00:00 <br>
-            >> 2022-08-07 00:00:00
-        </p>
+            <b>Descrição:</b>
+            <p>
+                Biblioteca Python relacionada a datas, onde é criado um objeto "RelativeDate" que possui o atributo datetime, onde é retornado um objeto datetime.
+            </p>
+            <p>
+                O objetivo desta biblioteca é facilitar a manipulação de datas relativas e calculos com datas, em sua primeira versão estamos trabalhando apenas com a data relativa baseado em mês, onde pode se passar o argumento de meses (positivo e negativo) e retornará a data relativa ao mês desejado
+            </p>
+            
+            <hr>
+            <u><b>Links</b></u> <br>
+            <b>GitHub:</b> <a href="https://github.com/jmiante/relativedate/" target="_blank">https://github.com/jmiante/relativedate</a> <br>
+            <b>PyPI:</b> <a href="https://pypi.org/project/relativedate/" target="_blank">https://pypi.org/project/relativedate</a> <br>
+            <b>Site:</b> <a href="https://jmiante.github.io/relativedate/">https://jmiante.github.io/relativedate</a> <br>
+            
+            <hr>
+            <b>Instalação:</b>
+            <p>pip install relativedate</p>
+            <hr>
+            
+            <hr>
+            <b>Exemplo Utilização:</b>
+            <p>
+                from datetime import datetime <br>
+                from relativedate import RelativeDate <br>
+                <br>
+                dt = datetime(year=2023, month=5, day=7)<br>
+                rd = RelativeDate(dt)<br>
+                print(rd)<br><br>
+                rd.addMonth(-9)<br>
+                <br>
+                print(rd)<br><br>
+            </p>
+            <hr>
+            <p style="background: lightgray; color: black; padding: 20px;">
+                <b>RETURN:</b><br>
+                >> 2023-05-07 00:00:00 <br>
+                >> 2022-08-07 00:00:00
+            </p>
 
-        <hr><hr>
-        <b>Doação:</b>
-        <p>Ajude o Projeto a continuar, qualquer doação é bem vinda</p>
+            <hr><hr>
+            <b>Doação:</b>
+            <p>Ajude o Projeto a continuar, qualquer doação é bem vinda</p>
 
-        <b>CHAVE PIX: </b> d51024a6-4320-4cb6-9241-b0a4d165dfd2 <br>
-        <b>PIX Copia e Cola: </b> <a href="00020126860014br.gov.bcb.pix0136d51024a6-4320-4cb6-9241-b0a4d165dfd20224Doacao para Projeto PiPY5204000053039865802BR5924Jonathas Henrique Miante6009Sao Paulo62100506Doacao630459B3"> Link </a> <br>
-        <b>QRCODE PIX: </b> <br> <img src="site/img/pix.jpg" class="img img-fluid" style="max-width: 300px;">
-        <hr>
-        <p><b>Nome: </b>Jonathas Henrique Miante - <b>Banco: </b>PicPay</p>
+            <b>CHAVE PIX: </b> d51024a6-4320-4cb6-9241-b0a4d165dfd2 <br>
+            <b>PIX Copia e Cola: </b> <a href="00020126860014br.gov.bcb.pix0136d51024a6-4320-4cb6-9241-b0a4d165dfd20224Doacao para Projeto PiPY5204000053039865802BR5924Jonathas Henrique Miante6009Sao Paulo62100506Doacao630459B3"> Link </a> <br>
+            <b>QRCODE PIX: </b> <br> <img src="site/img/pix.jpg" class="img img-fluid" style="max-width: 300px;">
+            <hr>
+            <p><b>Nome: </b>Jonathas Henrique Miante - <b>Banco: </b>PicPay</p>
 
-        <hr><hr>
+            <hr><hr>
+        </div>
     </div>
-
+    <script src="site/js/menu_top.js"></script>
 </body>
 </html>
