@@ -26,7 +26,7 @@
     from relativedate import RelativeDate <br>
     <br>
     dt = datetime(year=2023, month=5, day=7)<br>
-    rd = RelativeDate(year=2023, month=5, day=22)<br>
+    rd = RelativeDate(dt)<br>
     <br>
     print(rd.get_relative_month(-9))<br><br>
 </p>
@@ -42,7 +42,11 @@
 <b>Doação:</b>
 <p>Ajude o Projeto a continuar, qualquer doação é bem vinda</p>
 
-<b>PIX: </b> jhmiante@gmail.com
+<b>CHAVE PIX: </b> d51024a6-4320-4cb6-9241-b0a4d165dfd2 <br>
+<b>PIX Copia e Cola: </b> <a href="00020126860014br.gov.bcb.pix0136d51024a6-4320-4cb6-9241-b0a4d165dfd20224Doacao para Projeto PiPY5204000053039865802BR5924Jonathas Henrique Miante6009Sao Paulo62100506Doacao630459B3"> Link </a> <br>
+<b>QRCODE PIX: </b> <br> <img src="site/img/pix.jpg" style="max-width: 300px;">
+<hr>
+<p><b>Nome: </b>Jonathas Henrique Miante - <b>Banco: </b>PicPay</p>
 
 <hr>
 <hr>

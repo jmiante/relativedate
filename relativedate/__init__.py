@@ -1,4 +1,5 @@
 from datetime import datetime as dt
+from relativedate import dtmath
 
 
 class RelativeDate:
@@ -18,23 +19,8 @@ class RelativeDate:
     def __str__(self):
         return self.datetime.strftime('%Y-%m-%d')
 
-    def get_relative_month(self, relative_month):
-        mes = self.month + relative_month
-        ano = self.year
-            
-        # Tratado Ano
-        if abs(relative_month) > 12:
-            ano_delta = int(relative_month / 12)
-            ano += ano_delta
-            mes += (abs(ano_delta) * 12) 
-        
-        # Tratamento do Mês
-        if mes < 1: 
-            mes += 12
-            ano -= 1
-        elif mes > 12: 
-            mes -= 12
-            ano += 1
-        return self.datetime.replace(year=ano, month=mes)
+    def addMonth(self, relative_month):
+        self.datetime = dtmath.addMonth(self.datetime, relative_month)
 
-    
+    def addYear(self, relative_year):
+        self.datetime = dtmath.addYear(self.datetime, relative_year)
