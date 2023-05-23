@@ -31,3 +31,15 @@ def addMonth(datetime, relative_month):
 def addDay(datetime, relative_day):
      return datetime + timedelta(days=relative_day)
 
+
+def add(datetime, year=0, month=0, day=0, hour=0, minute=0, second=0):
+    datetime = datetime
+    if month != 0:
+        datetime = addMonth(datetime, month)
+    if year != 0:
+        datetime = addYear(datetime, year)
+    return datetime + timedelta(days=day, hours=hour, minutes=minute, seconds=second)
+
+def dateDiff(first_datetime, second_datetime):
+     return second_datetime - first_datetime
+    

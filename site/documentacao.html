@@ -21,6 +21,8 @@
                 <li><a href="#addyear" class="text-dark">Função addYear()</a></li>  
                 <li><a href="#addmonth" class="text-dark">Função addMonth()</a></li>
                 <li><a href="#addday" class="text-dark">Função addDay()</a></li>
+                <li><a href="#add" class="text-dark">Função add()</a></li>
+                <li><a href="#datediff" class="text-dark">Função dateDiff()</a></li>
             </ul>
         </section>       
         
@@ -148,6 +150,53 @@
                         2023-05-05 00:00:00<br>
                         2023-04-10 00:00:00<br>
                         2023-05-20 00:00:00<br>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="col-12" id="add">
+                    <h5>Função add(year, month, day, hour, minute, second)</h5>
+                    <p>
+                        A função add irá alterar os atributos year, month, day, hour, minute e second do datetime do objeto RelativeDate de acordo com o parametros acima, nenhum parâmetro é obrigatório, em caso de não explicitar o mesmo será considerado com o valor de <i>0</i>, segue abaixo um exemplo de uso:
+                    </p>
+                    <div class="border p-2 bg-dark text-white">
+                        from datetime import datetime <br>
+                        from relativedate import RelativeDate <br><br>
+                        dt = datetime(year=2022, month=9, day=2) <br>
+                        rd = RelativeDate(dt) <br>
+                        print(rd.datetime)<br><br>
+                        rd.add(year=10, month=1, day=5) <br>
+                        print(rd.datetime)<br><br>
+                    </div>
+                    <div class="border p-2 bg-secondary text-white mt-2">
+                        RETORNO: <br>
+                        2022-09-05 00:00:00<br>
+                        2023-10-07 00:00:00<br>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="col-12" id="datediff">
+                    <h5>Função dateDiff(datetime)</h5>
+                    <p>
+                        A função dateDiff irá retornar um objeto timedelta com a distância do atributo datetime do objeto RelativeDate com o do parâmetro<i>datetime</i> passado na função, segue abaixo um exemplo de uso:
+                    </p>
+                    <div class="border p-2 bg-dark text-white">
+                        from datetime import datetime <br>
+                        from relativedate import RelativeDate <br><br>
+                        dt = datetime(year=2022, month=9, day=2)<br>
+                        dt2 = datetime(year=2023, month=5, day=20)<br><br>
+                        rd = RelativeDate(dt)<br>
+                        print(rd.datetime)<br>
+                        print(dt2)<br><br>
+                        date_diff = rd.dateDiff(dt2)<br>
+                        print(date_diff)<br>
+                    </div>
+                    <div class="border p-2 bg-secondary text-white mt-2">
+                        RETORNO: <br>
+                        2022-09-02 00:00:00<br>
+                        2023-05-20 00:00:00<br>
+                        260 days, 0:00:00<br>
                     </div>
                     <hr>
                 </div>
