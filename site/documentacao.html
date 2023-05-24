@@ -18,13 +18,15 @@
             <ul class="mt-3">
                 <li><a href="#instalacao" class="text-dark">Instalação</a></li>
                 <li><a href="#criando_objeto_rd" class="text-dark">Criando um objeto RelativeDate</a></li>  
-                <li><a href="#addyear" class="text-dark">Função addYear()</a></li>  
-                <li><a href="#addmonth" class="text-dark">Função addMonth()</a></li>
-                <li><a href="#addday" class="text-dark">Função addDay()</a></li>
-                <li><a href="#add" class="text-dark">Função add()</a></li>
-                <li><a href="#datediff" class="text-dark">Função dateDiff()</a></li>
-                <li><a href="#lastday" class="text-dark">Função lastDay()</a></li>
-                <li><a href="#lastdate" class="text-dark">Função lastDate()</a></li>
+                <li><a href="#addyear" class="text-dark">Método addYear()</a></li>  
+                <li><a href="#addmonth" class="text-dark">Método addMonth()</a></li>
+                <li><a href="#addday" class="text-dark">Método addDay()</a></li>
+                <li><a href="#add" class="text-dark">Método add()</a></li>
+                <li><a href="#datediff" class="text-dark">Método dateDiff()</a></li>
+                <li><a href="#lastday" class="text-dark">Método lastDay()</a></li>
+                <li><a href="#lastdate" class="text-dark">Método lastDate()</a></li>
+                <li><a href="#utildays" class="text-dark">Método utilDays()</a></li>
+                <li><a href="#getutilday" class="text-dark">Método getUtilDay()</a></li>
             </ul>
         </section>       
         
@@ -82,9 +84,9 @@
                 </div>
 
                 <div class="col-12" id="addyear">
-                    <h5>Função addYear(relative_year)</h5>
+                    <h5>Método addYear(relative_year)</h5>
                     <p>
-                        A função addYear irá alterar o ano do atributo datetime do objeto RelativeDate de acordo com o parametro <i>relative_year</i>, segue abaixo um exemplo de uso:
+                        O Método addYear irá alterar o ano do atributo datetime do objeto RelativeDate de acordo com o parametro <i>relative_year</i>, segue abaixo um exemplo de uso:
                     </p>
                     <div class="border p-2 bg-dark text-white">
                         from datetime import datetime <br>
@@ -107,9 +109,9 @@
                 </div>
 
                 <div class="col-12" id="addmonth">
-                    <h5>Função addMonth(relative_month)</h5>
+                    <h5>Método addMonth(relative_month)</h5>
                     <p>
-                        A função addMonth irá alterar o mês do atributo datetime do objeto RelativeDate de acordo com o parametro <i>relative_month</i>, segue abaixo um exemplo de uso:
+                        O Método addMonth irá alterar o mês do atributo datetime do objeto RelativeDate de acordo com o parametro <i>relative_month</i>, segue abaixo um exemplo de uso:
                     </p>
                     <div class="border p-2 bg-dark text-white">
                         from datetime import datetime <br>
@@ -132,9 +134,9 @@
                 </div>
 
                 <div class="col-12" id="addday">
-                    <h5>Função addDay(relative_day)</h5>
+                    <h5>Método addDay(relative_day)</h5>
                     <p>
-                        A função addDay irá alterar o dia do atributo datetime do objeto RelativeDate de acordo com o parametro <i>relative_day</i>, segue abaixo um exemplo de uso:
+                        O Método addDay irá alterar o dia do atributo datetime do objeto RelativeDate de acordo com o parametro <i>relative_day</i>, segue abaixo um exemplo de uso:
                     </p>
                     <div class="border p-2 bg-dark text-white">
                         from datetime import datetime <br>
@@ -157,9 +159,9 @@
                 </div>
 
                 <div class="col-12" id="add">
-                    <h5>Função add(year, month, day, hour, minute, second)</h5>
+                    <h5>Método add(year, month, day, hour, minute, second)</h5>
                     <p>
-                        A função add irá alterar os atributos year, month, day, hour, minute e second do datetime do objeto RelativeDate de acordo com o parametros acima, nenhum parâmetro é obrigatório, em caso de não explicitar o mesmo será considerado com o valor de <i>0</i>, segue abaixo um exemplo de uso:
+                        O Método add irá alterar os atributos year, month, day, hour, minute e second do datetime do objeto RelativeDate de acordo com o parametros acima, nenhum parâmetro é obrigatório, em caso de não explicitar o mesmo será considerado com o valor de <i>0</i>, segue abaixo um exemplo de uso:
                     </p>
                     <div class="border p-2 bg-dark text-white">
                         from datetime import datetime <br>
@@ -179,9 +181,9 @@
                 </div>
 
                 <div class="col-12" id="datediff">
-                    <h5>Função dateDiff(datetime)</h5>
+                    <h5>Método dateDiff(datetime)</h5>
                     <p>
-                        A função dateDiff irá retornar um objeto timedelta com a distância do atributo datetime do objeto RelativeDate com o do parâmetro<i>datetime</i> passado na função, segue abaixo um exemplo de uso:
+                        O Método dateDiff irá retornar um objeto timedelta com a distância do atributo datetime do objeto RelativeDate com o do parâmetro<i>datetime</i> passado nO Método, segue abaixo um exemplo de uso:
                     </p>
                     <div class="border p-2 bg-dark text-white">
                         from datetime import datetime <br>
@@ -204,9 +206,9 @@
                 </div>
 
                 <div class="col-12" id="lastday">
-                    <h5>Função lastDay()</h5>
+                    <h5>Método lastDay()</h5>
                     <p>
-                        A função lastDay irá retornar o último dia do mês, segue abaixo um exemplo de uso:
+                        O Método lastDay irá retornar o último dia do mês, segue abaixo um exemplo de uso:
                     </p>
                     <div class="border p-2 bg-dark text-white">
                         from datetime import datetime <br>
@@ -225,9 +227,9 @@
                 </div>
 
                 <div class="col-12" id="lastdate">
-                    <h5>Função lastDate()</h5>
+                    <h5>Método lastDate()</h5>
                     <p>
-                        A função lastDate irá retornar um objeto datetime com o dia alterado para o último dia do mês do atributo do datetime do objeto RelativeDate, segue abaixo um exemplo de uso:
+                        O Método lastDate irá retornar um objeto datetime com o dia alterado para o último dia do mês do atributo do datetime do objeto RelativeDate, segue abaixo um exemplo de uso:
                     </p>
                     <div class="border p-2 bg-dark text-white">
                         from datetime import datetime <br>
@@ -242,11 +244,51 @@
                         2022-09-02 00:00:00<br>
                         2022-09-30 00:00:00<br>
                     </div>
-                    *** A Função lastDate() não altera o valor do atribuito datetime do objeto RelativeDate
+                    *** O Método lastDate() não altera o valor do atribuito datetime do objeto RelativeDate
                     <hr>
                 </div> 
-                
 
+                <div class="col-12" id="utildays">
+                    <h5>Método utilDays(disregard=[])</h5>
+                    <p>
+                        O Método utilDays irá retornar a quantidade de dias úteis no mês, podendo passar uma lista para desconsiderar com dia útil, usado por exemplo para feriados, segue abaixo um exemplo de uso:
+                    </p>
+                    <div class="border p-2 bg-dark text-white">
+                        from datetime import datetime <br>
+                        from relativedate import RelativeDate <br><br>
+                        dt = datetime(year=2022, month=9, day=2)<br>
+                        rd = RelativeDate(dt)<br><br>
+                        print(rd.utilDays())<br>
+                        print(rd.utilDays([5,19]))
+                    </div>
+                    <div class="border p-2 bg-secondary text-white mt-2">
+                        RETORNO: <br>
+                        21<br>
+                        19<br>
+                    </div>
+                    <hr>
+                </div>  
+
+                <div class="col-12" id="getutilday">
+                    <h5>Método getUtilDay(util_day, disregard=[])</h5>
+                    <p>
+                        O Método utilDays irá retornar a data útil referente ao dia útil solicitado dentro do mês do atribuito datetime, o dia útil é passado no argumento <i>util_day</i>, pode se passar uma lista também no argumento <i>disregard</i> para desconsiderar o dia como útil, segue abaixo um exemplo de uso:
+                    </p>
+                    <div class="border p-2 bg-dark text-white">
+                        from datetime import datetime <br>
+                        from relativedate import RelativeDate <br><br>
+                        dt = datetime(year=2022, month=9, day=2)<br>
+                        rd = RelativeDate(dt)<br><br>
+                        print(rd.getUtilDay(8))<br>
+                        print(rd.getUtilDay(8, [5,19]))
+                    </div>
+                    <div class="border p-2 bg-secondary text-white mt-2">
+                        RETORNO: <br>
+                        2023-09-12 00:00:00<br>
+                        2023-09-13 00:00:00
+                    </div>
+                    <hr>
+                </div> 
 
             </div>
             <a class="voltar-topo" href="#menu-top">Inicio</a>

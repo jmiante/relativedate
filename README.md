@@ -10,9 +10,10 @@
 
 <hr>
 <b>Links</b> <br>
+<b>Documentação:</b> <a href="https://jmiante.github.io/relativedate/" target="_blank">https://jmiante.github.io/relativedate</a> <br>
 <b>GitHub:</b> <a href="https://github.com/jmiante/relativedate/" target="_blank">https://github.com/jmiante/relativedate</a> <br>
-<b>PyPI:</b> <a href="https://pypi.org/project/relativedate/" target="_blank">https://pypi.org/project/relativedate</a> <br>
-<b>Site:</b> <a href="https://jmiante.github.io/relativedate/" target="_blank">https://jmiante.github.io/relativedate</a> <br>
+<b>PyPI (last version):</b> <a href="https://pypi.org/project/relativedate/" target="_blank">https://pypi.org/project/relativedate</a> <br>
+
 
 <hr>
 <b>Instalação:</b>

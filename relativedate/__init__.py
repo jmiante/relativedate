@@ -41,4 +41,9 @@ class RelativeDate:
     
     def lastDate(self):
         return dtget.lastDate(self.datetime)
+    
+    def getUtilDay(self, util_day, disregard=[]):
+        return dtget.getUtilDay(self.datetime, util_day, disregard)
 
+    def utilDays(self, disregard=[]):
+        return dtget.utilDays(self.datetime, disregard)
