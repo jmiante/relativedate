@@ -69,14 +69,28 @@
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5559049683467540"
                 crossorigin="anonymous"></script>
             <!-- github -->
-            <ins class="adsbygoogle"
+            <ins class="ADSENSE"
                 style="display:block"
                 data-ad-client="ca-pub-5559049683467540"
                 data-ad-slot="3989661299"
                 data-ad-format="auto"
                 data-full-width-responsive="true"></ins>
             <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
+                window.addEventListener('load', () => {
+                let matches = document.querySelectorAll("ins.ADSENSE");
+
+                        Array.from(matches).forEach((element) => {
+                            let parentElement = element.parentElement;
+                            if (window.getComputedStyle(parentElement).getPropertyValue("display") === "none")  { 
+                                element.remove(); 
+                            } else {
+                            element.classList.remove("ADSENSE");
+                            element.classList.add("adsbygoogle");
+                                (adsbygoogle = window.adsbygoogle || []).push({}); 
+                            }
+                        });
+
+                });
             </script>
     </div>
     <script src="site/js/menu_top.js"></script>
