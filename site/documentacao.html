@@ -270,9 +270,9 @@
                 </div>  
 
                 <div class="col-12" id="getutilday">
-                    <h5>Método getUtilDay(util_day, disregard=[])</h5>
+                    <h5>Método getUtilDay(util_day, disregard=[], last_day=False)</h5>
                     <p>
-                        O Método utilDays irá retornar a data útil referente ao dia útil solicitado dentro do mês do atribuito datetime, o dia útil é passado no argumento <i>util_day</i>, pode se passar uma lista também no argumento <i>disregard</i> para desconsiderar o dia como útil, segue abaixo um exemplo de uso:
+                        O Método utilDays irá retornar a data útil referente ao dia útil solicitado dentro do mês do atribuito datetime, o dia útil é passado no argumento <i>util_day</i>, pode se passar uma lista também no argumento <i>disregard</i> para desconsiderar o dia como útil, se o argumento last_day for True irá retornar o último dia útil caso o retorno seja None, segue abaixo um exemplo de uso:
                     </p>
                     <div class="border p-2 bg-dark text-white">
                         from datetime import datetime <br>

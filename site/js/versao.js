@@ -1,6 +1,7 @@
 const divVersao = document.getElementById('div_versao')
 
 const versoes = [
+    ['1.3.2', '29/05/2023', 'Adicionado opção getUtilDay o parâmetro last_day=False, se for True e o dia útil não existir no mês, retorna o último dia'],
     ['1.3.1', '25/05/2023', 'Correções de BUGS no método add()'],
     ['1.3.0', '24/05/2023', 'Adicionado as funções utilDays, getUtilDay'],
     ['1.2.0', '22/05/2023', 'Adicionado as funções lastDay, lastDate'],
