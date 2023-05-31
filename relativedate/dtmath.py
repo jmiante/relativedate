@@ -26,7 +26,13 @@ def addMonth(dt, relative_month):
         elif month > 12: 
             month -= 12
             year += 1
-        return dt.replace(year=year, month=month)
+        
+        day = dt.day
+        while True:
+            try:
+                return dt.replace(year=year, month=month, day=day)
+            except:
+                day -= 1
 
 def addDay(dt, relative_day):
      return dt + timedelta(days=relative_day)
